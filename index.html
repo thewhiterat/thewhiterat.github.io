@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+    Hello. It's a white rat.
+
+         __             _,-"~^"-.
+       _// )      _,-"~`         `.
+     ." ( /`"-,-"`                 ;
+    / 6                             ;
+   /           ,             ,-"     ;
+  (,__.--.      \           /        ;
+   //'   /`-.\   |          |        `._________
+     _.-'_/`  )  )--...,,,___\     \-----------,)
+   ((("~` _.-'.-'           __`-.   )         //
+         ((("`             (((---~"`         //
+                                            ((________________
+                                            `----""""~~~~^^^```
+
+    You won't find anything interesting here. It's a static html page.
+    Have a nice day.
+  -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>whiterat</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background: #f8f9fa!important">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="./rat.png" alt="">
+      <h2>whiterat</h2>
+      <p class="lead">A rat that is constantly trying to find publicly exposed personal, sensitive data and reporting it to their owners.<br>If I ever helped you in any way, please feed me below.</p>
+    </div>
+    
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Bitcoin</b></label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span style="background: url('./btc.svg'); background-size: cover; width: 24px; height: 100%; display: inline-block;"></span>
+                </div>
+              </div>
+              <input onfocus="copyToClipboard(this, 0)" type="text" class="form-control" style="background: white;" value="1LPviFs231VwNLNURfszXdh46rhXcYPzUC" readonly>
+            </div>
+            <small id="copied0" class="d-none form-text text-muted">Copied!</small>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Litecoin</b></label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span style="background: url('./ltc.svg'); background-size: cover; width: 24px; height: 100%; display: inline-block;"></span>
+                </div>
+              </div>
+              <input onfocus="copyToClipboard(this, 1)" type="text" class="form-control" style="background: white;" value="LfTqaZ6jC6q2f5kypG2BWPb8sQnnegPYed" readonly>
+            </div>
+            <small id="copied1" class="d-none form-text text-muted">Copied!</small>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="exampleInputEmail1"><b>Ethereum</b></label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span style="background: url('./eth.svg'); background-size: cover; width: 24px; height: 100%; display: inline-block;"></span>
+                </div>
+              </div>
+              <input onfocus="copyToClipboard(this, 2)" type="text" class="form-control" style="background: white;" value="0xB6fde25825AE37c3ad003b4f95f3259587F16189" readonly>
+            </div>
+            <small id="copied2" class="d-none form-text text-muted">Copied!</small>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="text-center pt-3 text-muted">
+            have a question? <br>
+            ask at <a href="mailto:thewhiterat@protonmail.com">thewhiterat@protonmail.com</a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <script>
+    function copyToClipboard(input, i) {
+      input.select();
+      try {
+        var success = document.execCommand('copy');
+        if (success) {
+          document.querySelector('#copied' + i).classList.remove('d-none');
+        }
+      } catch (err) {}
+    }
+    </script>
+  </div>
+</body>
+</html>
